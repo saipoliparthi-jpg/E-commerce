@@ -1,16 +1,82 @@
-# React + Vite
+# ShopEasy - E-Commerce Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+ShopEasy is a responsive E-Commerce web application built using React.js. Users can browse products, search products, filter by category, sort products, add items to cart, manage quantities, and view order summaries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Product listing using Fake Store API
+* Search products by title
+* Category filtering
+* Product sorting
+* Add to Cart functionality
+* Mini Cart component
+* Cart page with quantity controls
+* Order summary section
+* Local Storage persistence
+* Featured Categories navigation
+* Responsive UI
+* Loading and Error handling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+* React.js
+* JavaScript
+* React Router DOM
+* Context API
+* CSS
+* Fake Store API
+* Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup Instructions
+
+### Clone Repository
+
+```bash
+git clone https://github.com/saipoliparthi-jpg/e-commerce.git
+```
+
+### Navigate to Project
+
+```bash
+cd e-commerce
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
+
+```bash
+npm run dev
+```
+
+### Build Project
+
+```bash
+npm run build
+```
+
+## Approach
+
+The application follows a component-based architecture. Product data is fetched from the Fake Store API and stored in state. Search, filtering, and sorting are implemented using JavaScript array methods. Cart functionality is managed globally using React Context API. Cart data is persisted using localStorage to maintain data after page refresh.
+
+## Assumptions
+
+* Fake Store API is used as the product data source.
+* Shipping charge is fixed at $5 when cart contains items.
+* Checkout functionality is UI only.
+* Authentication and payment gateway integration are not included.
+* Featured categories are based on the categories available from Fake Store API.
+
+## Live Demo
+
+https://e-commerce-nine-iota-59.vercel.app/
+
+## GitHub Repository
+
+https://github.com/saipoliparthi-jpg/e-commerce

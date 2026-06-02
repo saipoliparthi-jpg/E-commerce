@@ -65,7 +65,7 @@ const Home = () => {
       </section>
 
       <footer className="footer">
-        <p>© 2026 ShopEasy. All rights reserved.</p>
+        <p>© 2026 TrendCart. All rights reserved.</p>
       </footer>
     </div>
   );

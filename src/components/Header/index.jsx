@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <nav className="header">
       <Link to="/" className="logo">
-        ShopEasy
+        TrendCart
       </Link>
 
       <div className="nav-links">
